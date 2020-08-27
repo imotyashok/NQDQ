@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div id="heading" class="hidden-print">
+            <h1>Line Queue Management: Reception</h1>
+        </div>
+        
+        <table class="main_table">
+            <tr>
+                <th colspan='2' >Select Options</th>
+                <th >Ticket Preview</th>
+            </tr>
+            <tr>
+                <td>
+                    <div id="reasons_container" class="reasons hidden-print">
+                        <h1 style="font-size: 1.5em;">Reason For Visit:</h1>
+                        <form action="" method="post" id="options_form">
+        
+                            <input type="hidden" id="reason_value" name="reason_select" value="6">
+                            
+                            <input type="radio" id="1" name="reason_select" value="1">  
+                            <label for="1">Notary</label><br />
+                            <input type="radio" id="2" name="reason_select" value="2">  
+                            <label for="2">Safe Deposit Box</label><br />
+                            <input type="radio" id="3" name="reason_select" value="3">  
+                            <label for="3">Open/Close an Account</label><br />
+                            <input type="radio" id="4" name="reason_select" value="4">  
+                            <label for="4">Share Certificate (CD)</label><br />
+                            <input type="radio" id="5" name="reason_select" value="5">  
+                            <label for="5">Debit Cards</label><br />
+                            <input type="radio" id="6" name="reason_select" value="6">  
+                            <label for="6">Credit Cards</label><br />
+                            <input type="radio" id="7" name="reason_select" value="7">  
+                            <label for="7">Wire Transfer</label><br />
+                            <input type="radio" id="8" name="reason_select" value="8">  
+                            <label for="8">Checks</label><br />
+                            <input type="radio" id="9" name="reason_select" value="9">  
+                            <label for="9">Auto Loan</label><br />
+                            <input type="radio" id="10" name="reason_select" value="10" checked="true">  
+                            <label for="10">Other</label><br />
+                    </div>
+                </td>
+                <td>
+                    <div id="restrictions_container" class="restrictions hidden-print">
+                    <h1 style="font-size: 1.5em;">Window (OPTIONAL):</h1>
+                      
+        
+                            <input type="hidden" id="restrictions" name="restriction_select" value="11">
+                            <!-- <input type="hidden" id="count" name="count" value="0"> -->
+        
+                            <input type="radio" id="none" name="restriction_select" value="11" checked>  
+                            <label for="none">None</label><br />
+                            <input type="radio" id="01" name="restriction_select" value="1">  
+                            <label id="01label" for="01">1</label><br />
+                            <input type="radio" id="02" name="restriction_select" value="2">  
+                            <label id="02label" for="02">2</label><br />
+                            <input type="radio" id="03" name="restriction_select" value="3">  
+                            <label id="03label" for="03">3</label><br />
+                            <input type="radio" id="04" name="restriction_select" value="4">  
+                            <label id="04label" for="04">4</label><br />
+                            <input type="radio" id="05" name="restriction_select" value="5">  
+                            <label id="05label" for="05">5</label><br />
+        
+                        </form> 
+                    </div>
+                </td>
+                <td>
+                    <div class="ticket">
+                        <table class="ticket_table">
+                            <tr>
+                                <td>
+                                    <p class="centered" >YOUR NUMBER:</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="number" class="centered"># <span id="num" value="0">-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="time" class="centered">04/04/2020 - 12:33 PM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="centered" id="ticket_desc">Watch the waiting room display for your number and the call window. Please proceed to the call window once your number is displayed.</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <div id="button_container">
+                        <button id="btnPrint">PRINT</button><br>
+                    </div>
+                </td>
+            </tr>
+            </table>
+    
+        </body>
+
+</html>
